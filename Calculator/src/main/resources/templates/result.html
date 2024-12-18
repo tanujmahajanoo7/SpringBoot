@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			result page
+		</title>
+	</head>
+	<body>
+		<p>Result of <span th:text="${operation}"></span> is </p>
+		<p><span th:text="${res}"></span></p>
+		<form action="/calculate" method="post">
+			<label>Number 1: </label>
+			<input type="number" name="num1">
+			<label>Number 2: </label>
+			<input type="number" name="num2">
+			<button type="submit" name="operation" value="add">Addition</button>
+			<button type="submit" name="operation" value="sub">Subtraction</button>
+			<button type="submit" name="operation" value="mul">Multiplication</button>
+			<button type="submit" name="operation" value="div">Division</button>
+		</form>
+	</body>
+</html>
